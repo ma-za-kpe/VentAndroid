@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="3dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_margin="16dp"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dont_be_shy_speak_your_mind"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="12dp"
+        android:inputType="text"
+        android:background="@drawable/white_bg"
+        android:hint="enter caption: e.g #corona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="32dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caption">
+        <!-- Media -->
+        <ImageView
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="tap to record"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_record" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+            android:id="@+id/voicePlayerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:enableVisualizer="true"
+            app:playPauseBackgroundColor="#ff7700"
+            app:playPauseCornerRadius="100"
+            app:playProgressbarColor="#ff7700"
+            app:progressTimeColor="#000"
+            app:seekBarProgressColor="#000"
+            app:seekBarThumbColor="#FFC107"
+            app:shareCornerRadius="100"
+            app:shareText="SHARE ME"
+            app:showShareButton="false"
+            app:showTiming="true"
+            app:timingBackgroundColor="#6AFF7700"
+            app:viewBackground="#C6C4CF"
+            app:viewCornerRadius="100"
+            app:visualizationNotPlayedColor="#727171"
+            app:visualizationPlayedColor="#ff7700" />
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/white_bg"
+            android:contentDescription="tap to record"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_share" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "543330886942",
+    "firebase_url": "https://vent-ac8bc.firebaseio.com",
+    "project_id": "vent-ac8bc",
+    "storage_bucket": "vent-ac8bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:543330886942:android:11fdaa7dd1a277eb95950f",
+        "android_client_info": {
+          "package_name": "com.makumatthew.vent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "543330886942-v9ve3j44flkn0dkklon110c9n50dhqpm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.makumatthew.vent",
+            "certificate_hash": "7722153c5bb3b72908429a7805134f7ea9c8309b"
+          }
+        },
+        {
+          "client_id": "543330886942-e1b4ghu1aflah7b2hr9tcehuadnm51ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASchjfePetxU5QNbcDBqgGs6tqPmULatk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "543330886942-e1b4ghu1aflah7b2hr9tcehuadnm51ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

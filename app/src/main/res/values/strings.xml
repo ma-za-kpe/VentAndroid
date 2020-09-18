@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vent</string>
+    Login
+    <string name="title">Vent</string>
+    <string name="supporting_text">with google</string>
+    <string name="accept">Google</string>
+    <string name="dont_be_shy_speak_your_mind">Speak your mind!</string>
+</resources>
