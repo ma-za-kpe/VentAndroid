@@ -1,4 +1,4 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.utils
 
 import android.util.Log
 import timber.log.Timber

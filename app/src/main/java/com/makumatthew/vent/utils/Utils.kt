@@ -1,4 +1,4 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.utils
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern

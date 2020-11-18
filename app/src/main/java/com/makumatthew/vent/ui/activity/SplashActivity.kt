@@ -1,10 +1,10 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
+import com.makumatthew.vent.R
 import ke.kazinow.app.VentApplication
 
 class SplashActivity : AppCompatActivity() {
@@ -43,7 +43,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToMainActivity() {
-        val myIntent = Intent(this, MainActivity::class.java)
+        val myIntent = Intent(this, DeleteActivity::class.java)
         this.startActivity(myIntent)
     }
 

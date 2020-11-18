@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
+    android:background="@drawable/background" >
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -54,7 +54,7 @@
 
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView2"
+        android:id="@+id/add"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -76,49 +76,64 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:orientation="horizontal"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        app:layout_constraintVertical_bias="0.369"
+        app:strokeColor="@color/purple_700"
+        app:strokeWidth="3dp">
 
-        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
-            android:id="@+id/voicePlayerView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:enableVisualizer="true"
-            app:playPauseBackgroundColor="#ff7700"
-            app:playPauseCornerRadius="100"
-            app:playProgressbarColor="#ff7700"
-            app:progressTimeColor="#000"
-            app:seekBarProgressColor="#000"
-            app:seekBarThumbColor="#FFC107"
-            app:shareCornerRadius="100"
-            app:shareText="SHARE ME"
-            app:showShareButton="false"
-            app:showTiming="true"
-            app:timingBackgroundColor="#6AFF7700"
-            app:viewBackground="#C6C4CF"
-            app:viewCornerRadius="100"
-            app:visualizationNotPlayedColor="#727171"
-            app:visualizationPlayedColor="#ff7700" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+                android:id="@+id/voicePlayerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:enableVisualizer="true"
+                app:visualizationPlayedColor="#ff7700"
+                app:visualizationNotPlayedColor="#727171"
+                app:playPauseBackgroundColor="#ff7700"
+                app:timingBackgroundColor="#6AFF7700"
+                app:seekBarProgressColor="#000"
+                app:showShareButton="false"
+                app:shareCornerRadius="100"
+                app:playPauseCornerRadius="100"
+                app:showTiming="true"
+                app:viewCornerRadius="100"
+                app:viewBackground="#C6C4CF"
+                app:progressTimeColor="#000"
+                app:seekBarThumbColor="#FFC107"
+                app:playProgressbarColor="#ff7700"
+                app:shareText="SHARE ME"/>
 
 
-        <ImageView
-            android:id="@+id/share"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@drawable/white_bg"
-            android:contentDescription="tap to record"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_share" />
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/share"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/white_bg"
+                android:contentDescription="tap to record"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_share" />
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

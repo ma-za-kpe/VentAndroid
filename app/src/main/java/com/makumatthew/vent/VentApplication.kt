@@ -1,8 +1,8 @@
 package ke.kazinow.app
 
 import android.app.Application
-import com.makumatthew.vent.PrefManager
-import com.makumatthew.vent.ReleaseLogTree
+import com.makumatthew.vent.utils.PrefManager
+import com.makumatthew.vent.utils.ReleaseLogTree
 import timber.log.Timber
 import java.lang.Boolean
 

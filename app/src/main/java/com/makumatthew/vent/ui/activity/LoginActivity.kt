@@ -1,4 +1,4 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,6 +13,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import com.makumatthew.vent.R
 import com.tapadoo.alerter.Alerter
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -59,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
     private fun googleLogin() {
         val signInIntent = mGoogleSignInClient!!.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
-        Toast.makeText(this, "Signing up", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Signing in", Toast.LENGTH_SHORT).show()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -90,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    Toast.makeText(this, "signInWithCredential: succes", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "signInWithCredential: success", Toast.LENGTH_SHORT).show()
 
                     val user = task.result?.user
                     //check new account
@@ -142,7 +143,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToMainActivity() {
-        val myIntent = Intent(this, MainActivity::class.java)
+        val myIntent = Intent(this, DeleteActivity::class.java)
         this.startActivity(myIntent)
     }
 

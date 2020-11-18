@@ -1,4 +1,4 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.ui.activity
 
 import android.content.Context
 import android.content.Intent
@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.github.appintro.AppIntro
 import com.github.appintro.AppIntroFragment
 import com.github.appintro.AppIntroPageTransformerType
+import com.makumatthew.vent.R
 import com.tapadoo.alerter.Alerter
 import ke.kazinow.app.VentApplication
 import java.lang.Boolean

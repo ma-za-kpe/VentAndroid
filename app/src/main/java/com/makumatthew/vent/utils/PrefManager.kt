@@ -1,11 +1,11 @@
-package com.makumatthew.vent
+package com.makumatthew.vent.utils
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.makumatthew.vent.Constants.FIREBASE_TOKEN
-import com.makumatthew.vent.Constants.PREF_FULLNAME
-import com.makumatthew.vent.Constants.PREF_USER_EMAIL
-import com.makumatthew.vent.Constants.PREF_USER_PIC
+import com.makumatthew.vent.utils.Constants.FIREBASE_TOKEN
+import com.makumatthew.vent.utils.Constants.PREF_FULLNAME
+import com.makumatthew.vent.utils.Constants.PREF_USER_EMAIL
+import com.makumatthew.vent.utils.Constants.PREF_USER_PIC
 
 /*
 *
@@ -29,7 +29,7 @@ class PrefManager(val context: Context) {
     }
 
     private val pref: SharedPreferences = context.getSharedPreferences(
-        Constants.MyPREFERENCES,
+            Constants.MyPREFERENCES,
         Context.MODE_PRIVATE
     )
     private var editor: SharedPreferences.Editor

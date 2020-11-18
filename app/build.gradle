@@ -53,17 +53,43 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.3.0-alpha02'
 
+    //app intros
     implementation 'com.github.AppIntro:AppIntro:6.0.0'
 
+    //alerter
     implementation 'com.tapadoo.android:alerter:5.1.2'
-    implementation 'com.google.firebase:firebase-auth:19.3.2'
+
+    //play services
     implementation 'com.google.android.gms:play-services-auth:18.1.0'
 
+    //timber
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
+    //handle permissions
     implementation 'com.karumi:dexter:6.2.1'
 
+    //audio chat
     implementation 'com.github.JagarYousef:ChatVoicePlayer:1.0.7'
+
+    //navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+
+    //live data
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+
+    //viewmodel
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+
+    //flexbox pills
+    implementation 'nl.bryanderidder:themed-toggle-button-group:1.3.1'
+    implementation 'com.google.android:flexbox:2.0.1'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
